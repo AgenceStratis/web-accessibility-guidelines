@@ -2,9 +2,9 @@
 # Site settings
 #
 title: Web Accessibility Guidelines
-url: https://stevenmouret.github.io
+url: https://agencestratis.github.io
 baseurl: /web-accessibility-guidelines
-author: Steven Mouret
+author: Steven Mouret - Nicolas Zerr
 
 markdown: kramdown
 highlighter: rouge

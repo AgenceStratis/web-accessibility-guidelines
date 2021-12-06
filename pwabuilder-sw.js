@@ -36,7 +36,6 @@ const precacheFiles = [
     "img/images-1.3-3.png",
     "img/web-accessibility-guidelines.png",
     "index.html",
-    "about-me.html",
     "about-people-with-disabilities.html",
     "accessibility.html",
     "hearing-disability.html",

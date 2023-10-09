@@ -43,15 +43,19 @@ Disabling the outline property for :hover and :active states is not considered n
 
 ## Focus contrast
 
-THe contrast of this outline must be at least 3:1 with the interactive element and the background.
+The contrast of this outline must be at least 3:1 with the interactive element and the background.
 
 ## Browsers' default outline
 
-Here is the default outline to be defined, to ensure it's conform and visible.
+Here is the default outline to be defined on project where outline is hidden or not visible enough.
 
-`outline: 2px auto Highlight; /* for all browsers */`
-`outline: auto 2px -webkit-focus-ring-color; /* for webkit-based browsers */`
-`outline-offset: 1px; /* to be adapted according to the element visibility */`
+```css
+*:focus {
+    outline: 2px auto Highlight; /* for all browsers */
+    outline: auto 2px -webkit-focus-ring-color; /* for webkit-based browsers */
+    outline-offset: 1px; /* to be adapted according to the element visibility */
+}
+```
 
 The property `Highlight` can be replaced by `currentColor` (like in the Starter) if the contrast is sufficient.
 
@@ -60,8 +64,10 @@ The property `Highlight` can be replaced by `currentColor` (like in the Starter)
 Floating element (fixed main menu, cookie banner...) must not hide the focus, in any resolution or zoom percentage.
 To prevent it, use the `scroll-padding` property on `body` and `html` tags.
 
-`html,body {`
-` scroll-padding: 33% 0px;`
-`}`
+```css
+html,body {
+    scroll-padding: 33% 0px;
+}
+```
 
 In the previous example, the scroolbar will automatically move if the focus is at least at 33% from the top and the bottom of the page.
